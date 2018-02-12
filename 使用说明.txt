@@ -1,0 +1,6 @@
+1.sql server创建数据库:SelectCourseSystemDB
+2.打开项目App_Data目录下的sql.txt并复制全部内容
+3.右键点SelectCourseSystemDB这个库 新建查询 把刚才复制的sql语句粘贴进去 然后点执行  刷新一下发现SelectCourseSystemDB中多了几个表
+4.vs2010打开网站 修改web.config文件<add name="ConnectionString" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=SelectCourseSystemDB;Persist Security Info=True;User ID=renzhenhua;Password=123456;Max Pool Size = 512;"/>的字段： ID后面是你的数据库用户名（一般为sa） Password后面是你的数据库用户对应的密码
+5.保存文件
+6.vs启动调试
